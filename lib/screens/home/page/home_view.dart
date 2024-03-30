@@ -11,12 +11,12 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  SafeArea(
-      child: Scaffold(
-        body: SizedBox(
+    return  Scaffold(
+      body: SingleChildScrollView(
+        child: SizedBox(
           height: Constants.mediaQuery.height,
           width: Constants.mediaQuery.width,
-          child:   Column(
+          child:  const Column(
             children: [
               // const SizedBox(height: 50),
 
